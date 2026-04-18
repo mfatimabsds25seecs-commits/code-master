@@ -1,0 +1,453 @@
+1|int main( { cout<<"Hi"; }|Missing brace|Invalid main declaration|cout error|Missing semicolon|B
+1|int 2x=5;|Invalid variable name|Wrong data type|Assignment error|Missing semicolon|A
+1|#include iostream|Missing <>|Wrong header|include error|Missing semicolon|A
+1|cin<<a;|Missing semicolon|cin error|a not declared|Wrong operator|D
+1|char ch="A";|Missing semicolon|Wrong type|No error|Wrong quotes|D
+1|float x=5,5;|Missing semicolon|float error|No error|Wrong decimal|D
+1|cout<<Hello;|Missing semicolon|cout error|No error|Missing quotes|D
+1|if x>0 cout<<x;|Missing semicolon|if error|No error|Missing parentheses|D
+1|int a=;|Missing semicolon|Wrong type|No error|Missing value|D
+1|do{cout<<"Hi";}while x<5;|Missing semicolon|do-while error|No error|Missing parentheses|D
+1|switch(x){case 1 cout<<"One";}|Missing semicolon|switch error|No error|Missing colon|D
+1|return;|Missing semicolon|return error|No error|Missing value|D
+1|int arr[5]={1,2,3,4,5,6};|Missing semicolon|Array error|No error|Too many values|D
+1|cout<<(a+b;|Missing semicolon|cout error|No error|Missing parenthesis|D
+1|if(a>5);{cout<<a;}|Missing brace|if error|No error|Extra semicolon|D
+1|string name cin>>name;|string error|cin error|Missing operator|Missing semicolon|C
+1|#include<iostream>;|Missing <>|Wrong header|No error|Extra semicolon|D
+1|int main() cout<<"Hi";}|Missing semicolon|cout error|No error|Missing brace|D
+1|for(int i=0 i<5;i++)|Missing brace|for error|No error|Missing semicolon|D
+1|cout>>a;|Missing semicolon|cout error|No error|Wrong operator|D
+1|int a="10";|Missing semicolon|int error|No error|Type mismatch|D
+1|if(a>5){cout<<a;|Missing semicolon|if error|No error|Missing brace|D
+1|cout<<'Hello';|Missing semicolon|cout error|No error|Wrong quotes|D
+1|while(a=5){cout<<a;}|Missing semicolon|while error|No error|Assignment in condition|D
+1|break; outside loop|Missing semicolon|syntax error|No error|break misuse|D
+1|continue; outside loop|Missing semicolon|syntax error|No error|continue misuse|D
+1|int a,b,c|Wrong type|Declaration error|No error|Missing semicolon|D
+1|float =5.5;|Missing semicolon|float error|No error|Missing variable name|D
+1|cin>>;|Missing semicolon|cin error|No error|Missing variable|D
+1|cout<<;|Missing semicolon|cout error|No error|Missing expression|D
+1|for(;i<5;i++) cout i;|Missing semicolon|for error|No error|Missing <<|D
+1|if(a>5){cout<<"Hi"}|Missing brace|if error|No error|Missing semicolon|D
+1|int arr[]={1,2,}|Missing semicolon|Array error|No error|Trailing comma|D
+1|char ch='AB';|Missing semicolon|char error|No error|Too many chars|D
+1|double 5x;|Missing semicolon|double error|No error|Invalid name|D
+1|cout<"Hi";|Missing semicolon|cout error|No error|Wrong operator|D
+1|cin>>>a;|Missing semicolon|cin error|No error|Extra operator|D
+1|int a==5;|Missing semicolon|int error|No error|Wrong operator|D
+1|return 0|return error|main error|No error|Missing semicolon|D
+1|void main(){}|Missing return|Syntax error|No error|Non-standard main|D
+1|int *p; *p = 10;|Segmentation fault|No error|Pointer error|Correct|A
+1|int arr[5]; arr[5] = 10;|Correct|Compile error|No error|Array out of bounds|B
+1|struct Node { int data; Node* next };|Correct|Struct error|No error|Missing semicolon|D
+1|int **p; p = &x;|Correct|Pointer error|Segmentation fault|Type mismatch|D
+1|int main() { int a; cout<<a; }|Correct|Compile error|No error|Uninitialized warning|D
+1|int x = 5; if(x=10) cout<<x;|Correct|Compile error|No error|Assignment in condition|D
+1|int arr[3] = {1,2,3,4};|Correct|Compile error|No error|Too many initializers|D
+1|for(int i=0; i<5 i++) cout<<i;|Correct|Compile error|No error|Missing semicolon|D
+1|int *arr = new int[5]; delete arr;|Correct|Memory error|No error|Use delete[]|D
+1|char *str = "Hello"; str[0] = 'h';|Correct|Segmentation fault|No error|String literal modification|D
+1|int a = 10; float b = a; int c = b;|Correct|Compile error|No error|Narrowing conversion|D
+1|struct Point { int x; int y } p; p.z = 5;|Correct|Compile error|No error|No member z|D
+1|int a; cout<<a<<endl;|Correct|Compile error|No error|Uninitialized variable|D
+1|int *p; cout<<*p;|Correct|Segmentation fault|No error|Dangling pointer|A
+1|int main() cout<<"Hello";|Correct|Compile error|No error|Missing braces|D
+1|int x = 5 int y = 10;|Correct|Compile error|No error|Missing semicolon|D
+1|struct S { int a int b; };|Correct|Compile error|No error|Missing semicolon|D
+1|int arr[5]; arr[-1] = 10;|Correct|Compile error|No error|Invalid index|D
+1|int *p = NULL; *p = 10;|Correct|Compile error|No error|Segmentation fault|D
+1|int a[3] = {1,2,3}; cout<<a[3];|Correct|Compile error|No error|Out of bounds|D
+1|float x = 5.5; int y = x;|Correct|Compile error|No error|Narrowing warning|D
+1|int x = 5; if(x==5); cout<<x;|Correct|Compile error|No error|Extra semicolon|D
+1|int a=5; int a=10;|Correct|Compile error|No error|Redefinition|D
+1|int arr[3]; arr = {1,2,3};|Correct|Compile error|No error|Array assignment invalid|D
+1|int x; x = x + y;|Correct|Compile error|No error|y undeclared|D
+1|int main() { int x; return "hello"; }|Correct|Compile error|No error|Return type mismatch|D
+1|int *ptr; ptr = 10;|Correct|Compile error|No error|Type mismatch|D
+1|int arr[2][2]; arr[2][1] = 5;|Correct|Compile error|No error|Out of bounds|D
+1|struct A { int x; }; A *p; p.x = 5;|Correct|Compile error|No error|Pointer member access|D
+1|int i = 0; while(i<5) i++; i++;|Correct|Compile error|Logic error|No error|D
+1|int arr[3] = {1,2}; arr[2] = 3;|Array error|Compile error|No error|Correct|D
+1|int *p = new int; delete[] p;|Correct|Compile error|Memory error|Wrong delete|D
+1|char str[] = "Hello"; str[5] = '!';|Correct|Compile error|No error|Out of bounds|D
+1|int x=5, y=0; int z = x/y;|Correct|Compile error|No error|Division by zero|A
+1|int *arr[5]; arr[0] = new int; delete arr[0];|Memory leak|Compile error|No error|Correct|D
+1|struct Node { int data; Node *next; }; Node n; n.next = NULL;|Struct error|Compile error|No error|Correct|D
+1|int a[3]; a[3]=10;|Correct|Compile error|No error|Out of bounds|D
+1|int *p = nullptr; *p=5;|Correct|Compile error|No error|Segmentation fault|D
+1|int main() { int x = 5; cout<<x<<endl }|Correct|Compile error|No error|Missing semicolon|D
+1|int x=5 int y=6;|Correct|Compile error|No error|Missing semicolon|D
+1|int arr[2][2]={{1,2},{3,4}}; arr[1][2]=5;|Correct|Compile error|No error|Out of bounds|D
+1|struct S { int x; int y; }; S s; s.z=5;|Correct|Compile error|No error|No member z|D
+1|int *p, a=5; p=&a; cout<<*p;|Pointer error|Compile error|No error|Correct|D
+1|int a; cin>>a>>;|Correct|Compile error|No error|Extra operator|D
+1|int arr[3]={1,2,3,4};|Correct|Compile error|No error|Too many initializers|D
+1|int x; if(x>0) cout<<x|Correct|Compile error|No error|Missing semicolon|D
+1|int main() int a; return 0;|Correct|Compile error|No error|Missing braces|D
+1|int *p; p++;|Correct|Compile error|No error|Increment pointer uninitialized|D
+1|int arr[]={1,2,3}; arr[0]=arr[3];|Correct|Compile error|No error|Out of bounds|D
+1|int a=5; int *p=&a; *p=10;|Pointer error|Compile error|No error|Correct|D
+2|int x=5; cout<<x++;|5|6|Error|4|A
+2|int x=5; cout<<++x;|6|4|Error|5|A
+2|int a=2,b=3; cout<<a+b;|6|23|Error|5|D
+2|int x=10; x+=5; cout<<x;|5|15|Error|10|B
+2|int x=5; cout<<x--<<x;|55|45|Error|54|D
+2|for(int i=1;i<=3;i++) cout<<i;|012|321|Error|123|D
+2|int i=1; while(i<=3){cout<<i;i++;}|012|Infinite|Error|123|D
+2|int i=3; do{cout<<i;i--;}while(i>0);|123|210|Error|321|D
+2|int a=5; if(a>3) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|D
+2|int a=2; if(a==3) cout<<"A"; cout<<"B";|B|AB|Nothing|A|A
+2|int x=5; if(x>10); cout<<"Hi";|Nothing|Error|Infinite|Hi|D
+2|int a=1; cout<<a++ + ++a;|4|5|Error|3|B
+2|int x=10; cout<<x/3;|3|4|Error|3.33|A
+2|cout<<(5>3);|false|1|Error|true|B
+2|int a=5; cout<<(a>10?1:0);|0|true|Error|1|A
+2|int arr[3]={1,2,3}; cout<<arr[1];|2|3|Error|1|A
+2|int arr[]={5,10,15}; cout<<arr[2];|10|15|Error|5|B
+2|int x=0; cout<<!x;|1|true|Error|0|A
+2|int a=5; cout<<(a==5);|false|1|Error|true|B
+2|char ch='A'; cout<<ch;|65|Error|a|A|D
+2|char ch=65; cout<<ch;|A|Error|B|65|A
+2|int x=5; cout<<x*2+1;|12|21|Error|11|D
+2|int x=10; cout<<x%3;|3|0|Error|1|D
+2|int i=0; for(;i<3;){cout<<i;i++;}|123|Infinite|Error|012|D
+2|int a=5; cout<<a<<a;|55|5 5|Error|10|A
+2|cout<<"Hello"<<"World";|HelloWorld|Error|Hello|Hello World|A
+2|int x=5; x=x++; cout<<x;|6|4|Error|5|D
+2|int x=1; cout<<x++<<++x;|23|13|Error|12|B
+2|int a=0; if(a) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|A
+2|int a=5; if(a=0) cout<<"A"; else cout<<"B";|B|Error|Nothing|A|A
+2|int x=3; cout<<x*x;|9|3|Error|6|A
+2|for(int i=0;i<2;i++) cout<<"Hi";|HiHi|Infinite|Error|Hi|A
+2|int x=10; cout<<(x>5 && x<20);|false|1|Error|true|B
+2|int x=0; cout<<(x|1);|0|1||false|Error|A
+2|int a=5,b=10; cout<<(a>b?a:b);|10|0|Error|5|A
+2|int x=5; cout<<x/2;|2|3|Error|2.5|A
+2|int x=5; cout<<x%2;|1|2|Error|0|A
+2|int a=5; cout<<++a+a++;|12|13|Error|11|A
+2|int arr[2]={1,2}; cout<<arr[0]+arr[1];|12|Error|2|3|D
+2|int i=5; while(i>0){cout<<i;i-=2;}|542|543|Infinite|531|D
+2|cout<<sizeof(int);|4|Depends|Error|2|B
+2|int x=5; if(x++) cout<<"Yes";|No|Error|Nothing|Yes|D
+2|int x=5; int *p=&x; *p=10; cout<<x;|10|Undefined|Error|5|A
+2|int arr[3]={1,2,3}; cout<<arr[1];|2|3|Error|1|A
+2|int x=5; cout<<x++<<++x;|67|57|Error|56|B
+2|int i=0; while(i<3) cout<<i++;|123|321|Error|012|D
+2|int arr[2][2]={{1,2},{3,4}}; cout<<arr[1][0];|2|3|4|1|B
+2|int x=0; cout<<!x;|1|true|Error|0|A
+2|int x=5; int y=x+++x; cout<<y;|11|12|Error|10|B
+2|int a=1; if(a) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|D
+2|int a=5; if(a=0) cout<<"A"; else cout<<"B";|B|Error|Nothing|A|A
+2|char ch='A'; cout<<ch;|65|Error|a|A|D
+2|char ch=65; cout<<ch;|A|Error|B|65|A
+2|int x=10; cout<<x/3;|3.33|4|Error|3|D
+2|int arr[]={1,2,3}; cout<<arr[3];|2|3|Error|1|C
+2|int i=1; for(;i<=3;) cout<<i++;|012|321|Error|123|D
+2|int x=5; cout<<x%2;|1|2|Error|0|A
+2|int a=5; int *p=&a; *p=20; cout<<a;|20|Undefined|Error|5|A
+2|int x=1; do{cout<<x;}while(x++<3);|12|1|Error|123|D
+2|int a[3]={1,2,3}; int *p=a; cout<<*(p+2);|2|3|Error|1|B
+2|int x=5; if(x==5); cout<<x;|0|Error|Nothing|5|D
+2|int arr[3]={1,2,3}; arr[0]=arr[3];|2|3|Error|1|C
+2|int x=5; int y=++x + x++; cout<<y;|12|10|Error|11|A
+2|int i=0; for(;i<3;i++) cout<<i;|123|321|Error|012|D
+2|int a=5; cout<<a<<a;|10|5 5|Error|55|D
+2|int x=0; cout<<x|1;|0|1||true|Error|A
+2|int arr[2][2]={{1,2},{3,4}}; cout<<arr[0][1]+arr[1][0];|5|4|Error|3|A
+2|struct Point {int x,y;}; Point p={1,2}; cout<<p.x+p.y;|12|Error|1|3|D
+2|int x=5; x=x++; cout<<x;|6|Undefined|Error|5|D
+2|int arr[3]={1,2,3}; cout<<++arr[0];|2|2|Error|1|B
+2|int x=10; cout<<(x>5 && x<20);|false|1|Error|true|B
+2|int a=5,b=10; cout<<(a>b?a:b);|10|0|Error|5|A
+2|int i=0; while(i<3){cout<<i; i++;}|123|321|Error|012|D
+2|int arr[]={1,2,3,4,5}; int *p=arr; cout<<*(p+4);|5|4|Error|1|A
+2|int x=0; cout<<x++<<x;|11|10|Error|01|D
+2|int arr[2][3]={{1,2,3},{4,5,6}}; cout<<arr[1][2];|6|5|Error|3|A
+2|char str[]="ABC"; cout<<str[1];|B|C|Error|A|A
+2|int a=5; cout<<(a==5 ? 10 : 20);|5|20|Error|10|D
+2|int x=1; int y=x+++x; cout<<y;|3|1|Error|2|A
+2|int arr[3]; arr[0]=1; arr[1]=2; arr[2]=3; cout<<arr[0]+arr[2];|4|5|Error|3|B
+2|int *p; p=new int(10); cout<<*p;|0|Error|Undefined|10|D
+2|int a=5,b=3; cout<<a>b?a:b;|5|Error|Undefined|3|A
+2|int x=5; int y=x-- - --x; cout<<y;|1|2|Error|0|B
+2|int arr[3][2]={{1,2},{3,4},{5,6}}; cout<<arr[2][1];|5|Error|Undefined|6|D
+2|int a=0; if(a) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|A
+2|int *p=NULL; cout<<*p;|Segmentation fault|Error|Undefined|0|A
+2|int x=1; cout<<++x + ++x;|5|3|Error|4|D
+2|int arr[3]={1,2,3}; cout<<arr[1]++;|2|3|Error|1|A
+2|int i=0; while(i++<3) cout<<i;|123|012|Error|1234|A
+2|int x=5; int y=x++ + ++x; cout<<y;|12|10|Error|11|A
+2|struct S{int a;}; S s={5}; S *p=&s; p->a=10; cout<<s.a;|10|Error|Undefined|5|A
+2|int arr[2][2]; arr[0][0]=1; arr[1][1]=2; cout<<arr[1][0];|2|0|Error|1|B
+2|int x=10; cout<<x/4;|2.5|3|Error|2|A
+2|int a=5; int *p=&a; *p=*p+5; cout<<a;|10|Error|Undefined|5|A
+2|int x=5; int y=x+++ +x; cout<<y;|11|12|Error|10|A
+3|The output statement in C++ is ____.|cout|print|output|cin|A
+3|Header file for cin and cout is ____.|iostream|string|fstream|stdio.h|A
+3|The return type of main() is ____.|int|float|char|void|A
+3|The symbol ending a statement is ____.|.|;|:|,|B
+3|Array index starts from ____.|0|-1|any|1|A
+3|Loop that runs at least once is ____.|while|do-while|nested|for|B
+3|Keyword to exit loop is ____.|end|break|continue|stop|B
+3|Keyword to skip iteration is ____.|pass|continue|break|skip|B
+3|Equal to operator is ____.|==|!=|<=|=|A
+3|Logical AND operator is ____.|&&|and||&||A
+3|Decimal data type is ____.|char|float|bool|int|B
+3|Constant keyword is ____.|const|static|define|fixed|A
+3|Single character type is ____.|char|int|bool|string|A
+3|Function with no return type uses ____.|void|int|empty|null|A
+3|Operator to increment value is ____.|+=|++|inc|+|B
+3|ASCII of A is ____.|65|66|97|64|A
+3|Function to read line is ____.|get|getline|read|cin|B
+3|Loop for known iterations is ____.|do-while|for|infinite|while|B
+3|Operator for not equal is ____.|!=|<=|>=|==|A
+3|Keyword to return value is ____.|give|return|back|send|B
+3|Operator to access struct member is ____.|.|->|*|::|A
+3|Operator to get address is ____.|&|->|%|*|A
+3|Pointer declaration uses symbol ____.|&|->|#|*|D
+3|File handling header is ____.|fstream|iostream|file|stdio.h|A
+3|Append file mode is ____.|ios::out|ios::app|ios::ate|ios::in|B
+3|Default return of main is ____.|-1|0|undefined|1|B
+3|Block starts with ____.|{|[|<|(|A
+3|Block ends with ____.|)|]|>|}|D
+3|Relational operators give ____.|float|bool|string|int|B
+3|Logical OR operator is ____.| ||||or|&|A
+3|Keyword for constant integer is ____.|define|const|static|fixed|B
+3|Operator to access array is ____.|{}|[]|<>|()|B
+3|Variable retaining value is ____.|static|extern|register|auto|A
+3|Separate function parameters using ____.|:|,|.|;|B
+3|String header file is ____.|cstring|string|stdio.h|string.h|B
+3|Ternary operator symbol is ____.|:|?:|&&|?|B
+3|Stop program immediately using ____.|exit|stop|end|break|A
+3|Keyword to define structure is ____.|struct|object|type|class|A
+3|Keyword before namespace std is ____.|using|include|define|use|A
+3|Input operator is ____.|>>|==|=|<<|A
+3|Assignment operator is ____.|=|!=|:=|==|A
+3|Boolean true prints as ____.|1|yes|on|true|A
+3|Keyword to declare global variable ____.|extern|none|global|static|B
+3|File output object is ____.|ofstream|fstream|file|ifstream|A
+
+3|Pointer to an integer is declared as ____.|int p*;|*int p;|pointer int p;|int *p;|D
+3|To access member of structure through pointer we use ____.|->|::*|*|.|A
+3|Dynamic array allocation uses ____.|new|alloc|create|malloc|A
+3|Delete allocated memory for array uses ____.|delete[]|free|remove|delete|A
+3|Array of 5 integers is declared as ____.|int arr();|int arr{};|int arr;|int arr[5];|D
+3|To access 2D array element arr[2][3] we use ____.|arr(2,3);|arr[3][2];|arr{2,3};|arr[2][3];|D
+3|The operator to get address of variable is ____.|&|->|%|*|A
+3|Pointer arithmetic is done using ____.|*,/|&,|&&|+,-|D
+3|Uninitialized pointer points to ____.|Garbage value|0|Error|NULL|A
+3|Structure keyword in C++ is ____.|struct|object|define|class|A
+3|Member of structure is accessed using ____.|->|::*|&|.|D
+3|Function that does not return value uses keyword ____.|void|int|return|null|A
+3|The expression ++*p means ____.|increment value pointed by p|increment both|undefined|increment pointer|A
+3|To declare array of pointers we write ____.|int arr*[5];|*int arr[5];|int arr[5]*;|int *arr[5];|D
+3|Memory for pointer is allocated using ____.|malloc|alloc|create|new|D
+3|To free memory allocated by new we use ____.|free|delete[]|remove|delete|D
+3|2D array with 3 rows and 4 columns is declared as ____.|int arr[4][3];|int arr(3,4);|int arr{};|int arr[3][4];|D
+3|Pointer to pointer is declared as ____.|int p**;|**int p;|int *p*;|int **p;|D
+3|To access last element of array arr[5] we write ____.|arr[5];|arr[-1];|arr[0];|arr[4];|D
+3|Size of pointer on 64-bit system is usually ____.|8 bytes|Depends on type|16 bytes|4 bytes|A
+3|Null pointer is written as ____.|0|nullptr|All|NULL|C
+3|Increment pointer p by 1 using ____.|p++|++p|All|p+1|C
+3|Dereference pointer p is done by ____.|&p|p|->p|*p|D
+3|Array of 10 characters is ____.|char arr();|char arr{};|char arr;|char arr[10];|D
+3|Pointer to 2D array element arr[3][4] is ____.|arr[2][3];|*arr[2][3];|arr+2+3;|&arr[2][3];|D
+3|To pass array to function, we use ____.|&arr|arr[]|*arr|arr|B
+3|For structure array, member is accessed as ____.|arr[i]->member|*arr[i].member|arr[i]*.member|arr[i].member|D
+3|The operator == is ____.|comparison|increment|logical|assignment|A
+3|Post-increment means ____.|increment before use|increment twice|error|increment after use|D
+3|Pre-increment means ____.|increment after use|increment twice|error|increment before use|D
+3|Pointer to array is ____.|int *p[5];|int p*;|int p[5]*;|int (*p)[5];|D
+3|Access 2D array using pointer ____.|arr[i][j]|Both|None|*(*(arr+i)+j)|B
+3|To dynamically allocate 2D array, we use ____.|malloc|alloc|Both|new|C
+3|Pointer arithmetic moves in ____.|elements|bits|words|bytes|A
+3|Address-of operator returns ____.|value|type|size|address|D
+3|Dangling pointer occurs when ____.|pointer uninitialized|NULL pointer|All|memory freed|C
+3|Structure pointer initialized as S *p = new S; access member ____.|(*p).member|Both|None|p->member|B
+3|Array passed to function decays to ____.|copy|reference|value|pointer|D
+3|Pointer increment increases by ____.|size of type|depends on compiler|4|1|A
+3|2D array memory layout is ____.|column-major|random|stack only|row-major|D
+3|const pointer: int * const p means ____.|value fixed|both fixed|none|pointer fixed|A
+3|Pointer to const int: const int *p means ____.|cannot change pointer|cannot change both|none|cannot change value|D
+3|Pointer to const and const pointer combined: const int * const p means ____.|only value fixed|only pointer fixed|both changeable|cannot change value or pointer|D
+3|Pointer assignment: int *p; int a=5; p=&a; ____.|Error|Compile warning|Undefined|Correct|D
+3|Array name used in expression ____.|copy of array|reference|value|decays to pointer|D
+3|Access last row of 2D array arr[3][4] pointer style ____.|*(arr+3)|*(arr+4)|*arr|*(arr+2)|D
+3|Delete single pointer allocated with new ____.|delete[]|free|Both|delete|D
+3|Delete array allocated with new[] ____.|delete|free|Both|delete[]|D
+
+4|int x=5; int *p=&x; *p=10; cout<<x;|10|Undefined|Error|5|A
+4|int arr[3]={1,2,3}; arr[3]=4;|Compile error|No error|Garbage|Segmentation fault|A
+4|struct Node { int data; Node* next; }; Node n; n.next=NULL;|No error|Segmentation fault|Warning|Compile error|A
+4|int x=1; int y=x+++x; cout<<y;|3|1|Error|2|A
+4|int arr[2][2]={{1,2},{3,4}}; cout<<arr[1][1];|4|2|Error|3|A
+4|Pointer to integer declared as ____.|int p*;|*int p;|pointer int p;|int *p;|D
+4|Access structure member through pointer ____.|.|::*|*|->|D
+4|int *p = new int[5]; delete p;|Correct|Compile error|Segmentation fault|Memory leak|D
+4|char str[]="Hello"; str[0]='h';|No error|Compile error|Warning|Segmentation fault|A
+4|int a=5; if(a=0) cout<<"A"; else cout<<"B";|B|Error|Nothing|A|A
+4|int arr[]={1,2,3}; cout<<arr[1]++;|2|3|Error|1|A
+4|int x=5; int y=++x + x++; cout<<y;|12|10|Error|11|A
+4|int i=0; while(i<3){cout<<i; i++;}|123|321|Error|012|D
+4|int *p=NULL; cout<<*p;|Segmentation fault|Error|Undefined|0|A
+4|2D array element access arr[2][1] pointer style ____.|arr[2][1]|Both|None|*(*(arr+2)+1)|B
+4|Dynamic memory allocation for single int ____.|malloc|alloc|create|new int|D
+4|Delete array allocated by new[] ____.|delete|free|Both|delete[]|D
+4|const int *p means ____.|Cannot change pointer|Cannot change both|None|Cannot change value|D
+4|int arr[3]={1,2,3}; int *ptr=arr; cout<<*(ptr+2);|2|3|Error|1|B
+4|Post-increment vs pre-increment: int x=1; cout<<x++ + ++x;|3|5|Error|4|D
+4|Structure array member access: arr[i].member or arr[i]->member?|arr[i]->member|Both|None|arr[i].member|B
+4|Pointer to pointer declaration ____.|int p**;|**int p;|int *p*;|int **p;|D
+4|Access last element of array arr[5] ____.|arr[5];|arr[-1];|arr[0];|arr[4];|D
+4|Pointer arithmetic moves in ____.|elements|bits|words|bytes|A
+4|int x=0; cout<<x|1;|0|1||true|Error|A
+4|int arr[2][3]={{1,2,3},{4,5,6}}; cout<<arr[1][2];|6|5|Error|3|A
+4|int x=5; if(x==5); cout<<x;|0|Error|Nothing|5|D
+4|int *p; p=new int(10); cout<<*p;|0|Error|Undefined|10|D
+4|int a=5,b=3; cout<<(a>b?a:b);|5|Error|Undefined|3|A
+4|int arr[3]={1,2,3}; arr[0]=arr[3];|2|3|Error|1|C
+4|int x=5; x=x++; cout<<x;|6|Undefined|Error|5|D
+4|int arr[3][2]={{1,2},{3,4},{5,6}}; cout<<arr[2][1];|5|Error|Undefined|6|D
+4|int i=0; for(;i<3;i++) cout<<i;|123|321|Error|012|D
+4|int *arr[5]; arr[0]=new int; delete arr[0];|Memory leak|Compile error|No error|Correct|D
+4|int x=5; int y=x-- - --x; cout<<y;|1|2|Error|0|B
+4|char ch='A'; cout<<ch;|65|Error|a|A|D
+4|int x=1; do{cout<<x;}while(x++<3);|12|1|Error|123|D
+4|int a=0; if(a) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|A
+4|int arr[]={1,2,3,4,5}; int *p=arr; cout<<*(p+4);|5|4|Error|1|A
+4|int arr[2][2]; arr[0][0]=1; arr[1][1]=2; cout<<arr[1][0];|2|0|Error|1|B
+4|Pointer increment increases by ____.|size of type|depends on compiler|4|1|A
+4|Array passed to function decays to ____.|copy|reference|value|pointer|D
+4|2D array memory layout is ____.|column-major|random|stack only|row-major|D
+4|struct S{int a;}; S s={5}; S *p=&s; p->a=10; cout<<s.a;|10|Error|Undefined|5|A
+4|int x=10; cout<<x/4;|2.5|3|Error|2|A
+4|int *p=&x; *p=*p+5; cout<<x;|10|Error|Undefined|5|A
+4|int x=5; int y=x+++ +x; cout<<y;|11|12|Error|10|A
+
+4|int x=5; cout<<++x;|6|7|Error|5|A
+4|Operator to access struct member is ____.|->|.|*|::|B
+4|Loop executing once is ____.|while|do-while|nested|for|B
+4|int a=10; cout<<a/4;|2|3|Error|2.5|A
+4|for(int i=0;i<5 i++) cout<<i;|Missing bracket|Wrong condition|No error|Missing semicolon|D
+4|int arr[3]={1,2,3}; cout<<arr[0]+arr[2];|4|5|Error|3|B
+4|Keyword for constant is ____.|final|const|static|fixed|B
+4|int x=0; cout<<!x;|1|true|Error|0|A
+4|char ch="A";|Missing semicolon|Wrong type|No error|Wrong quotes|D
+4|File append mode is ____.|ios::out|ios::app|ios::ate|ios::in|B
+4|int x=5; cout<<x%2;|1|2|Error|0|A
+4|Symbol ending statement is ____.|.|;|:|,|B
+4|int a=5; cout<<a<<a;|55|5 5|Error|10|A
+4|Which loop best for known count?|do-while|for|infinite|while|B
+4|cin<<a;|Missing semicolon|cin error|No error|Wrong operator|D
+4|int x=10; cout<<x/3;|3|4|Error|3.33|A
+4|Array index starts from ____.|0|-1|any|1|A
+4|Keyword to exit loop is ____.|end|break|continue|stop|B
+4|cout<<(5>3);|false|1|Error|true|B
+4|Operator to increment is ____.|+=|++|inc|+|B
+4|int a=0; if(a) cout<<"Yes"; else cout<<"No";|No|Error|Nothing|Yes|A
+4|Header for strings is ____.|cstring|string|stdio.h|string.h|B
+4|int x=5; x=x++; cout<<x;|6|4|Error|5|D
+4|Logical OR operator is ____.| ||||or|&|A
+4|int i=3; while(i>0){cout<<i;i--;}|321|210|Error|123|A
+4|Operator to get address is ____.|->|&|%|*|B
+4|int a=5; cout<<++a+a++;|12|13|Error|11|A
+4|Keyword for no return function is ____.|void|int|empty|null|A
+4|cout>>a;|Missing semicolon|cout error|No error|Wrong operator|D
+4|int arr[]={5,10,15}; cout<<arr[1];|10|15|Error|5|A
+4|Block starts with ____.|{|[|<|(|A
+4|int x=1; cout<<x++<<++x;|23|13|Error|12|B
+4|Ternary operator symbol is ____.|:|?:|&&|?|B
+4|int x=5; cout<<x/2;|2|3|Error|2.5|A
+4|Keyword to return value is ____.|give|return|back|send|B
+4|char ch=65; cout<<ch;|A|Error|a|65|A
+4|Keyword for structure is ____.|struct|object|type|class|A
+4|int x=0; cout<<(x|1);|0|1||false|Error|A
+4|File input object is ____.|ofstream|fstream|file|ifstream|D
+4|Relational equal operator is ____.|==|!=|<=|=|A
+4|int i=1; for(;i<=3;) cout<<i++;|123|Infinite|Error|012|A
+4|Keyword to skip iteration is ____.|break|continue|pass|skip|B
+4|int a=5; cout<<(a==5);|false|1|Error|true|B
+4|Which data type stores decimal?|char|float|bool|int|B
+
+1|Which symbol ends a C++ statement?|!|;|:|.|B
+1|Which header is required to use cout?|#include<iostream>|#include<string>|#include<cstdlib>|#include<stdio.h>|A
+1|Which keyword is used to declare a constant?|final|static|define|const|D
+1|What is the default access specifier in a class?|private|protected|none|public|A
+1|Which operator is used for multiplication?|x|%|/|*|D
+1|Which of the following is a valid variable name?|var_2|@var|var-2|2var|A
+1|How do you write a single line comment?|/*|#|--|//|D
+1|What keyword is used to define a function?|function|void|def|func|B
+1|Which is the correct way to declare an integer?|integer num;|num int;|var num;|int num;|D
+1|What is the correct syntax to return a value from a function?|return: value|return(value)|yield value;|return value;|D
+
+2|What is the output of: cout<<2+3;?|5|6|Error|23|A
+2|cout<<"Hi"; outputs?|Hi|HI|Error|Hello|A
+2|What is the output of: cout<<10/3;?|3.33|3.0|4|3|D
+2|int x=5; int y=2; cout<<x%y; outputs?|2|0|5|1|D
+2|What is the output: cout<<"Hello"+"World";?|Error|Hello World|WorldHello|HelloWorld|A
+2|Which outputs 5 in C++?|cout<<2*3;|cout<<2/3;|cout<<5;|cout<<2+3;|D
+2|int a=2,b=3; cout<<a*b; outputs?|6|2|3|5|A
+2|int x=7,y=3; cout<<x/y; outputs?|2.33|3|Error|2|D
+2|char c='A'; cout<<c; outputs?|A|Error|None|65|A
+2|int a=3,b=2; cout<<a-b; outputs?|5|Error|None|1|D
+
+3|Fill the blank to declare main: ____ main() {|int|start|main_code|void|A
+3|Fill blank: cout << ____ ;|"Hello"|num|value|10|A
+3|Fill blank: int arr[5]; arr[0]=____;|1|5|10|0|D
+3|Fill blank: for(int i=0;i<5;i++) ____;|()|[]|;|{}|D
+3|Fill blank: if(x>0) ____;|()|[]|;|{}|D
+3|Fill blank: switch(x) ____;|()|[]|;|{}|D
+3|Fill blank: do ____ while(x<5);|()|[]|;|{}|D
+3|Fill blank: while(x<5) ____;|()|[]|;|{}|D
+3|Fill blank: string s = "Hello"; cout << ____;|"s"|&s|*s|s|D
+3|Fill blank: cin >> ____;|"x"|&x|*x|x|D
+
+4|Which data type stores decimal values?|char|float|bool|int|B
+4|What will cout<<10/2; output?|5|20|10|2|A
+4|Which symbol is used for single line comment?|/*|#|--|//|D
+4|How do you declare a variable x of type integer?|x int;|integer x;|var x;|int x;|D
+4|What is the output of: int x=5; x++; cout<<x;?|6|Error|None|5|A
+4|Which keyword is used for conditional statements?|for|while|switch|if|D
+4|Which operator compares two values?|=|!=|&&|==|D
+4|What does && operator do?|Logical OR|Assignment|Increment|Logical AND|D
+4|What does | operator do?|Logical OR|Logical AND||Assignment|Decrement|D
+4|Which keyword is used to loop a fixed number of times?|while|do|if|for|D
+
+4|Which data type stores characters?|char|float|bool|int|A
+4|How do you increment a variable by 1?|A,B,C|D|D|x+1;x++;x=x+1; all of these|C
+4|Which is correct syntax to define a function?|func void(){}|void:func(){}|func(){}|void func(){}|D
+4|How do you read a number from user?|cout>>x;|scanf(x);|input(x)|cin>>x;|D
+4|How to print something?|cin<<x;|print(x);|write(x);|cout<<x;|D
+4|Which loop executes at least once?|for|while|none|do-while|D
+4|Which operator is used for equality?|=|!=|<>|==|D
+4|Which operator is used for NOT?|~|^|&|!|D
+4|Which header is required to use strings?|#include<iostream>|#include<cmath>|#include<cstdlib>|#include<string>|D
+4|Which operator adds two numbers?|*|-|/|+|D
+
+4|Which symbol is used for array indexing?|()|{}|<>|[]|D
+4|Which operator multiplies two numbers?|+|-|/|*|D
+4|Which keyword is used to define a constant variable?|let|define|final|const|D
+4|Which operator divides two numbers?|*|+|-|/|D
+4|Which keyword is used for decision making?|switch|both|none|if|B
+4|What is the default value of int variable?|1|null|undefined|0|D
+4|What is the output of: cout<<(5>3);?|0|true|false|1|D
+4|Which operator is used to get remainder?|/|*|+|%|D
+4|Which keyword is used to exit a loop early?|exit|continue|stop|break|D
+4|Which data type is used to store true/false?|int|char|float|bool|D
+
+4|Which function is used to find string length?|size()|len()|both length() and size()|length()|C
+4|Which operator is used to concatenate strings?|&|.|*|+|D
+4|Which operator is used for assignment?|==|!=|+|=|D
+4|Which keyword is used to skip an iteration?|break|pass|skip|continue|D
+4|Which keyword is used to terminate a program?|return|stop|terminate|exit|A
+4|Which symbol is used for multi-line comment?|//|#|--|/*|D
+4|Which operator is used to access object members?|->|::|all of these|.|C
+4|Which loop is used when number of iterations is unknown?|for|do|all of these|while|D
+4|What is the correct way to declare a pointer?|int ptr*;|*int ptr;|ptr int*;|int *ptr;|D
+4|Which operator is used for logical
+1|int main(){|2|3|4|5|65
+4|for(int i = 0; i < 5; i++)    int x = i;    cout << x << " ";|01234|Compile error|Garbage value|0|66
+1|rgergrehbgtogmzl;'/|ER A;WE |RE ATETAH|R EHSB|SD|A
+3|refuh aligea|.;l,|ilg fy|hsrt |4e |A
+4| wean;ga|e ag|g e|g e|gr |B
